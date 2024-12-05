@@ -13,7 +13,8 @@ class _HomeScreenState extends State<HomeScreen> {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.remove('isLoggedIn');
     await prefs.remove('email');
-    Navigator.pushReplacementNamed(context, 'login');
+    Navigator.pushReplacementNamed(
+        context, '/login'); // Pastikan rute ini sesuai
   }
 
   @override
